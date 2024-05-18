@@ -27,10 +27,10 @@ public class AuthService {
 
     public Employee authenticate(Long employeeId, String password) {
         // Loop through the hardcoded employees to find a match
-        System.out.println(password + employeeId);
+
         //System.out.println("Hello World");
         for (Employee employee : hardcodedEmployees) {
-            System.out.println(employee.getId() + employee.getPassword());
+
 
             if (employee.getId().equals(employeeId) && employee.getPassword().equals(password)) {
                 System.out.println(password + employee);
